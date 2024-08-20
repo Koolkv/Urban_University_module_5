@@ -8,7 +8,7 @@ class House:
             print(f'{new_floor} этаж')
         else:
             print(
-                f'{new_floor} - в "{h2.name}" такого этажа не существует. Выше {self.number_of_floors}-го этажа '
+                f'{new_floor} - в "{self.name}" такого этажа не существует. Выше {self.number_of_floors}-го этажа '
                 f'не подняться.')
 
 
