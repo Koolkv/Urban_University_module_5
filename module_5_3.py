@@ -18,11 +18,8 @@ class House:
         return f'Название: {self.name}, кол-во этажей: {self.number_of_floors}'
 
     def __eq__(self, other):
-        return self.number_of_floors == other.number_of_floors
-
-    # def __eq__(self, other):
-    #     if isinstance(other, int):    # не работает проверка на int
-    #         return self.number_of_floors == other.number_of_floors #
+        if isinstance(other, int):
+            return self.number_of_floors == other
 
     def __lt__(self, other):
         return self.number_of_floors < other.number_of_floors
